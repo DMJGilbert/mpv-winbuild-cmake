@@ -3,7 +3,7 @@ ExternalProject_Add(xz
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
-    GIT_RESET 18b845e69752c975dfeda418ec00eda22605c2ee # v5.4.1
+    GIT_RESET 061a1e4d2d0b1c3f5c9a637fd94bac035a826340 # v5.4.7
     CONFIGURE_COMMAND ${EXEC} CONF=1 autoreconf -fi && <SOURCE_DIR>/configure
         --host=${TARGET_ARCH}
         --prefix=${MINGW_INSTALL_PREFIX}
